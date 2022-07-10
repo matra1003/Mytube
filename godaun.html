@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godaun- Homepage - all solution in one place</title>
+</head>
+<style>
+    /* tags, class, universal*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: tan;
+    width: 100%;
+    height: 3000px;
+
+}
+.nav{
+    width: 50%;
+    height: 60px;
+    background-color: red;
+}
+.nav2{
+    width: 50%;
+    height: 60px;
+    background-color: royalblue;
+    float: right;
+    margin-top: -60px;
+}
+.box{
+    width: 100%;
+    height: 50px;
+    border: 0px white solid;
+}
+.child-box1{
+    width: 30%;
+    height: 50px;
+    border: 0px white solid;
+    align-items: center;
+}
+.child-box2{
+    width: 30%;
+    align-items: center;
+    height: 50px;
+    border: 0px white solid;
+    float: center;
+    margin-top: -55px;
+    margin-left: 35%;
+}
+.child-box3{
+    width: 30%;
+    align-items: center;
+    height: 50px;
+    border: 0px white solid;
+    float: right;
+    margin-top: -50px;
+}
+.box button:hover{
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    border: 5px white solid;
+    cursor: pointer;
+    color: white;
+    background-color: aliceblue;
+}
+.box img:hover{
+    height: 60px;
+    width: 100%;
+    transition: all 0.3s ease;
+    border: 2px white solid;
+    cursor: grab;
+}
+.search-box{
+    width: 60%;
+    height: 50px;
+    border: 2px black solid;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.search-box input:hover{
+    cursor: text;
+    border: 5px white solid;
+}
+.nav3{
+    width: 100%;
+    height: 30px;
+    background-color:grey ;
+    display: flex;
+    margin-top: 10px;
+}
+.nav3-box{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    margin-top: 10px;
+
+}
+.nav3-child-box{
+    width: 10%;
+    height: 30px;
+    border: black solid;
+    margin-left: 8px;
+}
+.nav3 button:hover{
+    width: 100%;
+    height: 30px;
+    border: 3px white solid;
+    transition: all 0.3s ease-in-out ;
+    cursor: pointer;
+    background-color: azure;
+}
+.matter-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 70px;
+}
+.news-box{
+    width: 400px;
+    height: 500px;
+    border: 2px white solid;
+    margin-top: 80px;
+    margin-left: 20px;
+    background-color: azure;
+    display: flex;
+    float: left;
+}
+.news-child-box{
+    width: 100%;
+    height: 50px;
+    border: 2px black solid;
+    margin-left: -10px;
+    background-color: black;
+    margin-top: -35px;
+}
+.shopping-box{
+    width: 900px;
+    height: 550px;
+    border: 2px white solid;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: azure;
+}
+.shopping-child-box{
+    width: 100%;
+    height: 50px;
+    border: 2px black solid;
+    margin-left: -30px;
+    background-color: pink;
+    margin-top: -15px;
+}
+.shopping-child-box1{
+    width: 100px;
+    height:100px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.shopping-box img:hover{
+    border: 2px black solid;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.shopping-box a:hover{
+    border: 0.2px darkmagenta solid;
+    color: darkmagenta;
+    cursor: pointer;
+}
+.news-box2{
+    width: 300px;
+    height: 500px;
+    border: 2px white solid;
+    margin-top: 80px;
+    margin-left: 20px;
+    background-color: azure;
+    display: flex;
+    float: left;
+}
+
+.flag-box{
+    width: 80px;
+    height: 590px;
+    border: 0.2px black dashed;
+    float: left;
+    margin-left: 14px;
+}
+.hrline{
+    border: 0.5px black solid;
+    margin-top: 5px;
+    width: 90%;
+    margin-top: 45px;
+    margin-left: 55px;
+}
+.news-child-box2{
+    width: 390px;
+    height: 460px;
+    margin-top: 30px;
+    float: left;
+    margin-left: -350px;
+}
+
+
+</style>
+
+<body>
+    <div>
+
+        <div class="nav">
+            <div class="box">
+                <div class="child-box1"><img onclick="home()" style="width: 95%; height:60px;" src="logo.png" alt=""></div>
+                <div class="child-box2"><h1 style="font-weight: bold; color:azure; font-size: 30px; font-style: oblique; margin-top: 10px;">G O D A U N</h1></div>
+                <div class="child-box3"><button onclick="login()" style="width: 95%; height:95%; background-color:red; margin-left: 5px; color:black; font-size:25px;">L O G I N</button></div>
+            </div>
+        </div>
+
+        <div class="nav2">
+            <div class="box">
+                <div class="search-box">
+                <form>
+                 <input ondblclick="search()" style="width:100%; height:50px; font-size: 20px; margin-top: 0px;" type="search" name="" id="search">
+                </form>
+                </div>
+                <div class="child-box3"><button id="share-button" onclick="share()" style="margin-top: -2px; margin-left: -5px; width:100%; height:50px; background-color: maroon; font-size:30px;">S  H  A  R  E</button></div>
+        </div>            
+        </div>
+
+<div class="nav3">
+<div class="nav3-box">
+    <div class="nav3-child-box">
+        <button id="menu" style="width: 100%; height:30px; font-size: 20px;">Menu</button>
+    </div>
+    <div class="nav3-child-box">
+        <button id="to-do" onclick="todo()" style="width: 100%; height:30px; background-color: green; color: aliceblue;">To-do</button>
+    </div>
+    <div class="nav3-child-box">
+        <button id="calc" onclick="calc()" style="width: 100%; height:30px; background-color: black; color: white;">Calculator</button>
+    </div>
+    <div class="nav3-child-box">
+        <button id="youtube" onclick="youtube()" style="width: 100%; height:30px; background-color: maroon; color: azure;">Youtube</button>
+    </div>
+    <div class="nav3-child-box">
+        <button id="facebook" onclick="facebook()" style="width: 100%; height:30px; background-color: royalblue; color: white;">Facebook</button>
+    </div>
+    <div class="nav3-child-box">
+        <button id="instagram" onclick="instagram()" style="width: 100%; height:30px; background-color: orangered; color: beige;">Instagram</button>
+    </div>
+    <div class="nav3-child-box">
+        <button id="whatsapp" onclick="whatsapp()" style="width: 100%; height:30px; background-color: lightgreen; color: black;">Whatsapp</button>
+    </div>
+    <div class="nav3-child-box">
+        <button id="live tv" onclick="livetv()" style="width: 100%; height:30px;">Live Tv</button>
+    </div>
+    <div class="nav3-child-box">
+        <button id="online-study" onclick="study()" style="width: 100%; height:30px; background-color: yellowgreen; color: black;">Online Study</button>
+    </div>
+
+</div>
+
+</div>
+<div class="matter-box">
+<div class="news-box">
+    <div class="news-child-box"><h1 style="color:white; font-size:25px; margin-left:20px;">N E W S  HEADLINES</h1></div>
+     <div class="news-child-box2">
+            <div class="myslides">
+                   <img style="width:360px; height:450px;" src="news/headline1.png" alt="">
+               </div>
+         <div class="myslides">
+         <img style="width:360px; height:450px;" src="news/HEADLINE2.png" alt="">
+         </div>
+                    <div class="myslides">
+                       <img style="width:360px; height:450px;" src="news/HEADLINE3.png" alt="">
+                    </div>
+       <div class="myslides">
+       <img style="width:360px; height:450px;" src="news/HEADLINE4.png" alt="">
+       </div>
+  <a  class="stop" onmouseover="stopSlides()">=</a>
+        </div>
+
+
+     </div>
+
+<div class="shopping-box">
+    <div class="shopping-child-box"><p style="font-size:33px; margin-left: 50px; padding: 5px; font-weight:bold; color:white;">Shopping A R E N A</p></div>
+         <div class="shopping-child-box1"><img onclick="mg1()" style="width:100px;height:100px;" src="shopping-arena/1mg.png" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="amazon()" style="width:100px;height:100px;" src="shopping-arena/amazon.png" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="bakaaro()" style="width:100px;height:100px;" src="shopping-arena/bakaaro.png" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="bigbazaar()" style="width:100px;height:100px;" src="shopping-arena/big-bazzar.png" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="ebay()" style="width:100px;height:100px;" src="shopping-arena/download.png" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="lawson()" style="width:100px;height:100px;" src="shopping-arena/lawson.png" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="myntra()" style="width:100px;height:100px;" src="shopping-arena/myntra.png" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="naaptol()" style="width:100px;height:100px;" src="shopping-arena/naaptol.png" alt=""></div>
+         
+            <div class="shopping-child-box1"><img onclick="nike()" style="width:100px;height:100px;" src="shopping-arena/nike.png" alt=""></div>
+            <div class="shopping-child-box1"><img onclick="ola()" style="width:100px;height:100px;" src="shopping-arena/ola.png" alt=""></div>
+            <div class="shopping-child-box1"><img onclick="onlineShop()" style="width:100px;height:100px;" src="shopping-arena/online-shop.png" alt=""></div>
+            <div class="shopping-child-box1"><img onclick="oyo()" style="width:100px;height:100px;" src="shopping-arena/oyo.png" alt=""></div>
+            <div class="shopping-child-box1"><img onclick="pharmaeasy()" style="width:100px;height:100px;" src="shopping-arena/pharmaeasy.png" alt=""></div>
+            <div class="shopping-child-box1"><img onclick="relianceTrend()" style="width:100px;height:100px;" src="shopping-arena/reliance-trend.png" alt=""></div>
+            <div class="shopping-child-box1"><img onclick="shopGuru()" style="width:100px;height:100px;" src="shopping-arena/shop-guuru.png" alt=""></div>
+            <div class="shopping-child-box1"><img onclick="snapdeal()" style="width:100px;height:100px;" src="shopping-arena/snapdeal.png" alt=""></div>
+         
+         <div class="shopping-child-box1"><img onclick="alibaba()" style="width:100px;height:100px;" src="shopping-arena/alibaba.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="dell()" style="width:100px;height:100px;" src="shopping-arena/dell.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="fbb()" style="width:100px;height:100px;" src="shopping-arena/fbb.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="flipkart()" style="width:100px;height:100px;" src="shopping-arena/flipkart.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="foodBazar()" style="width:100px;height:100px;" src="shopping-arena/food-bazaar.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="hs18()" style="width:100px;height:100px;" src="shopping-arena/hs18.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="pantaloon()" style="width:100px;height:100px;" src="shopping-arena/pantaloon.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="swiggy()" style="width:100px;height:100px;" src="shopping-arena/swiggy.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="cityShop()" style="width:100px;height:100px;" src="shopping-arena/city-shop.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="foodBazar()" style="width:100px;height:100px;" src="shopping-arena/food-bazaar.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="maxMart()" style="width:100px;height:100px;" src="shopping-arena/max-mart.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="lenskart()" style="width:100px;height:100px;" src="shopping-arena/lenskart.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="shopify()" style="width:100px;height:100px;" src="shopping-arena/shopify.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="shopclues()" style="width:100px;height:100px;" src="shopping-arena/shopclue.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="webGrocer()"() style="width:100px;height:100px;" src="shopping-arena/web-grocer.jfif" alt=""></div>
+         <div class="shopping-child-box1"><img onclick="zomato()" style="width:100px;height:100px;" src="shopping-arena/zomato.png" alt=""></div>
+         <p><a style="float:right; font-size:18px; margin-top: 5px; margin-right: 3px;" href="#">see more...</a></p>
+        </div>
+</div>
+<div>
+    <div class="news-box"></div>
+    <div class="news-box2"></div>
+    <div class="flag-box"><img style="width:100%; height:100%;" src="flag-banner1.jfif" alt=""></div>
+</div>
+</div>
+<hr class="hrline">
+
+
+<script>
+    function youtube(){
+    window.open("https://www.youtube.com","_top");
+}
+function facebook(){
+    window.open("https://www.facebook.com","_top");
+}
+function instagram(){
+    window.open("https://www.instagram.com","_top");
+}
+function whatsapp(){
+    window.open("https://web.whatsapp.com","_top");
+}
+function livetv(){
+    window.open("https://www.sonyliv.com","_top");
+}
+function study(){
+    window.open("https://www.geeksforgeeks.org","_top");
+}
+function share(){
+    window.open("https://share.facebook.com","_top");
+}
+function search(){
+    window.open("https://www.google.co.in","_top");
+}
+function home(){
+    var myArray = [];
+    myArray.push("Don't think to be over smart Please!, you are already on homepage.");
+    alert(myArray[0]);
+}
+function login(){
+    window.open("C:/Users/Shubham/OneDrive/Desktop/Mytube/login_page.html", "_top");
+}
+function calc(){
+    window.open("C:/Users/Shubham/OneDrive/Desktop/my_calc/calc.html","_top");
+}
+function todo(){
+    window.open("C:/Users/Shubham/OneDrive/Desktop/to-do-list/index.html","_top")
+}
+function mg1(){
+window.open("https://www.1mg.com",)
+}
+function amazon(){
+    window.open("https://www.google.com/aclk?sa=L&ai=DChcSEwiWsI-pi-74AhVOmGYCHQa1CDwYABAAGgJzbQ&ae=2&sig=AOD64_3k2o-x5Ri4UrKqBg9kRXsLJZqjVw&q&adurl&ved=2ahUKEwiIwIipi-74AhUu9zgGHZc1DGcQ0Qx6BAgCEAE");
+}
+function bakaaro(){
+    window.open("https://www.bigbasket.com/")
+}
+function bigbazaar(){
+    window.open("https://bigbazaaronlineshopping.in/")
+}
+function ebay(){
+    window.open("https://www.ebay.com/")
+}
+function lawson(){
+    window.open("https://www.lawson.jp/")
+}
+function myntra(){
+    window.open("https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjW2_bije74AhWUk2YCHXJ7D3sYABAAGgJzbQ&ae=2&ohost=www.google.com&cid=CAESbeD22ahKAwGAgWNodMcIMgrG466tjpLlskg217F55akHBz0TF07IjwmOOZZ9y6nJxDbrIsIcdmmvEZo0DLD4YFbd036Wj2EvhLeiYCQwuwkKC-9z1BjGcSBp0ZySX_jYKKLJLTRWiZkSLhkBmtM&sig=AOD64_0yQ1DsU37I4Heh9yZnGf8UNc3opw&q&adurl&ved=2ahUKEwiDlu_ije74AhXSzTgGHZXdCGEQ0Qx6BAgHEAE")
+}
+function naaptol(){
+    window.open("https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj6gMPyje74AhUYDisKHY9PDK4YABAAGgJzZg&ae=2&ohost=www.google.com&cid=CAESbeD2il4p8U_i6k6cjuRd0yPR18dS1_DJlQF9k35o2bfWhsCzydR2KT4sHJhrtHboOxOE5WSl86iD0xHMDZ-_W9KKBR89HO_u7oukGCANrZ-mADybycWwlt1NoQAej8SwO4IIum2t2oKiix_MnT4&sig=AOD64_1KQc0EsjCP4UoXStKbiRhNE6URSQ&q&adurl&ved=2ahUKEwjPgbzyje74AhWy9zgGHYI_ClMQ0Qx6BAgCEAE")
+}
+function nike(){
+    window.open("https://www.nike.com/in/")
+}
+function ola(){
+    window.open("https://www.olacabs.com/")
+}
+function onlineShop(){
+    window.open("https://www.shoppersstop.com/")
+}
+function oyo(){
+    window.open("https://www.oyorooms.com/")
+}
+function pharmaeasy(){
+    window.open("https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwipmMqeju74AhVjmWYCHQshDP8YABAAGgJzbQ&ae=2&ohost=www.google.com&cid=CAESbeD2b8vc4qh8Aydwx2MSMAZee1mrRqYdq5nWOvWr9cNoWvJfB6g6xABYSU4gRcQOXTURXBLY7LKz65pYtmpheW4Cn_Do7T3c0XLVrPIvQW1jjdHwQeI7XG0HfBOBFlIMmLiS9P4yi88j_-n0sME&sig=AOD64_3nUn9T_yBilBfQ7Qzl4Ni6TjRjAg&q&adurl&ved=2ahUKEwjhhcOeju74AhUXgGMGHQd9CmgQ0Qx6BAgEEAE")
+}
+function relianceTrend(){
+    window.open("https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjdtbmoju74AhXJfSsKHf9FAJ4YABAAGgJzZg&ae=2&ohost=www.google.com&cid=CAESbeD2lKQLSsdaqUtI8UNJL4g9d_5bSTm2d--XiU4IfE6BH_OtHr1-E0WLXLhGZfGyfpWNfdm_AJ6NQ8RQKXSlP3mNf2oKzww7mpWQu4wxTwjHPRL63arDLDS09xABT_8qhx1qPahqYSS5hXZx1g8&sig=AOD64_35PmmHiB8NQjT4YIOYSG3142ak7A&q&adurl&ved=2ahUKEwiRsK6oju74AhX-1jgGHRyPBTwQ0Qx6BAgDEAE")
+}
+function shopGuru(){
+    window.open("https://www.onlineshopguru.in/")
+}
+function snapdeal(){
+    window.open("https://www.snapdeal.com/")    
+}
+function alibaba(){
+    window.open("https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjC9M-kj-74AhXUmWYCHaJ7CAoYABAAGgJzbQ&ae=2&ohost=www.google.com&cid=CAESbeD2wctGn69pKz1yDqk2lOpZuxktGaKlS-ENxS094wpKKlI_n8i4od4kDfScNgpxQNOJI64ORFFlrR0qb2cO-ow-bwmiYnpG-R7cUy02i1FXZWSsMgIkJ853TCkDCpegm-RriO3-FxDB4jsbX1I&sig=AOD64_0Z9ZaD2vp0qRO3ftZreREGbeY6SA&q&adurl&ved=2ahUKEwjXv8ekj-74AhV77jgGHclbAZIQ0Qx6BAgDEAE")
+}
+function dell(){
+    window.open("https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjO1barj-74AhV6lGYCHUs4BCMYABAAGgJzbQ&ohost=www.google.com&cid=CAESbeD2bMnZ3zuOH5gORisZNjWaBcC8zQWOpdDX8bLjkK5Qq4B__ck4bJ8KRJvO61vOabG0tOoa1dhNJhaG135ws14PpB6OzuXYwVGNveKu6QvI-6FQxiLkiM4AqgNKk5S1ZJGIDNkyWrB4UHA68cA&sig=AOD64_33qtRRJ1HvCkisZJEU0WMyRAH0GA&q&adurl&ved=2ahUKEwiam6urj-74AhWV7zgGHVmECJUQ0Qx6BAgDEAE")
+}
+function fbb(){
+    window.open("https://www.amazon.in/Women-fbbOnline-Clothing-Accessories/s?rh=n%3A1953602031%2Cp_6%3AA2JS3GDOGWRZEQ")
+}
+function flipkart(){
+    window.open("https://www.flipkart.com/")
+}
+function foodBazar(){
+    window.open("https://foodbazar.net/")
+}
+function hs18(){
+    window.open("http://www.homeshops18.in/")
+}
+function pantaloon(){
+    window.open("https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjYyciDkO74AhUxnUsFHXM3BtAYABAAGgJzZg&ae=2&ohost=www.google.com&cid=CAESbeD2ksTnlxxzbwY5_Il4kmBDEoxIspCnSAqdBRC7m-TzZb4R4_aFjJLygxnTi9m5BMavNYoDDDrfcL2NXHFCoAON5j1T1lkgz-DI0cv640eBiQ2OJj65O4cRWzYeP1HWmQcpgFZsJV4DSCygYVQ&sig=AOD64_1lXQ--HvH-4x9eJdcuOdGukTHVDg&q&adurl&ved=2ahUKEwjc1b6DkO74AhWK2jgGHYq-B7QQ0Qx6BAgDEAE")
+}
+function swiggy(){
+    window.open("https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwic3qKLkO74AhWZJCsKHbaEBycYABAAGgJzZg&ae=2&ohost=www.google.com&cid=CAESbeD20QZcl345leSYOTYJHKf_s6sHR8gOhgZiiMoObkvmYwGtIFDfQqD_TWBu9YXG2QoNmtzhyR9kWIzzfVv4whR2LZ_Y9YWJsVvsDvjRgcXPnd4PDCehsyJ_xBQLLx5HskUpfZAbhwLOAmD8cVw&sig=AOD64_0Wf2oN2UZxXLDmmUmJ4K_zW8UYdA&q&adurl&ved=2ahUKEwjz55qLkO74AhUK8TgGHZipDccQ0Qx6BAgEEAE")
+}
+function cityShop(){
+    window.open("https://cityshopnet.in/")
+}
+function foodBazar(){
+    window.open("https://foodbazar.net/")
+}
+function maxMart(){
+    window.open("https://www.maxfashion.in/in/en/")
+    
+}
+function lenskart(){
+    window.open("https://www.lenskart.com/")
+}
+function shopify(){
+    window.open("https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj1tv-Eke74AhVekmYCHWNDDzwYABAAGgJzbQ&ohost=www.google.com&cid=CAESbeD2Ljnp8FlkKI77V66dwB_UF8_fesip13QweVUVuBrvgZyxvI9iVL7BGhQjCygzDa4y-NRDnu5K7ynzNLUQ8VxtEizvol5YiD1oDYOIgbvX_AAJLtbrkPw9diubzufQnF45ovSdLCkfbrRSdRU&sig=AOD64_2zQTiRSZIXE05QpW_7FeHhdjVS4A&q&adurl&ved=2ahUKEwiB9_eEke74AhWq-DgGHXDhDigQ0Qx6BAgDEAE")
+}
+function shopclues(){
+    window.open("https://bazaar.shopclues.com/")
+}
+function webGrocer(){
+    window.open("https://www.bigbasket.com/")
+}
+function zomato(){
+    window.open("https://www.zomato.com/")
+}
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("myslides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); 
+}
+
+function stopSlides() {
+    clearTimeout(myslides);
+}
+</script>
+</body>
+</html>

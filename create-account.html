@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up - Godaun</title>
+</head>
+<style>
+    body{
+        background-color: lightgray;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    .banner{
+        width: 100%;
+        height: 100px;
+    }
+
+    .fieldset{
+           width: 80%;
+           height: auto;
+           font-size: 18px;
+         text-align: left;
+         text-decoration: double;
+         font-family: sans-serif;
+}
+.button{
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+         padding-top: 7px;
+         display: block;
+}
+.label{
+    font-weight: bold;
+    color: #000000;
+}
+.value{
+    width: 70%;
+    height: 30px;
+    margin: auto;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
+    background-color: azure;
+}
+.fieldset label{
+    text-justify: auto;
+}
+.parent{
+    text-align: center;
+    color: brown;
+    font-size: 20px;
+}
+.margin20{
+    width: 70%;
+    height: 30px;
+    margin: auto;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 180px;
+    padding-left: 10px;
+}
+.banner img:hover{
+    height: 110px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 300 ease;
+}
+.transbox input:hover{
+    transition: all 0.3s ease;
+    cursor: text;
+}
+.label textarea:hover{
+    transition: all 0.3s ease-out;
+    cursor: text;
+    height: 160px;
+}
+.button button:hover{
+    background-color: #307CF9;
+    -webkit-box-shadow: 4px 5px 9px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 5px 8px rgba(0, 0, 0, 0.2);
+    border-color: #1857BB;
+    cursor: pointer;
+    color: aliceblue;
+}
+.matter input:hover{
+width: 30px;
+height: 30px;
+cursor: pointer;
+transition: all;
+}
+</style>
+<body>
+    <div class="banner"><img class="banner" src="au-banner.png" alt=""></div>
+    <center>
+        <p><a href="#">+91 - 873-787-8701 </a> || <a href="#">contact@godaun.nic.in</a></p>
+        <h1><u><b>Create an account for free !</b></u></h1>
+        
+
+<form class="background" action="#">
+    <fieldset class="fieldset">
+        <p>*   <u>Fill all details in capital letters</u></p>
+        <legend>
+           <h3 class="parent">1).Personal Details</h3>
+        </legend>
+        <div class="background">
+            <div class="transbox">
+                <p>
+                    <label class="label">FIRST NAME : <input onchange="alert(Number.value)" class="value" name="firstname"></label>
+                </p>
+                <p>
+                    <label class="label">LAST NAME : <input class="value" name="lastname"></label>
+                </p>
+                <p>
+                    <label class="label">DATE OF BIRTH : <input class="parent" type="date" name="birthdate" id=""></label>
+                </p>
+                <p><label class="label">PASSWORD : <input class="value" type="password"></label>
+                </p>
+                <p>
+                    <label class="label">CONFIRM PASSWORD : <input class="value" type="password"></label>
+                </p></div>
+                <p >
+                <label class="label">GENDER  :<input type="radio" name="gender" value="male">MALE</label>
+                <label class="label"><input type="radio" name="gender" value="female">FEMALE</label>
+            </p>
+           <div class="transbox">
+            <p>
+                <label class="label">MOBILE NUMBER : <input class="value" type="tel" name="mobilenumber" value="+91-"><br/>
+                                       <input class="margin20" type="tel" name="mobilenumber" value="+91-" ></label>           
+            </p>
+            <p>
+                <label class="label">EMAIL : <input class="value" type="email" name=""value="@gmail.com"></label>
+            </p>
+            <p> <label class="label">ADDRESS : <br> <textarea name="address"  cols="70" rows="5"></textarea>
+            </label>
+            </p>
+           </div>
+        </div>
+    
+    </fieldset>
+</form>
+
+<p class="matter"><input class="label" type="checkbox" name="" id="">I accept all the <a href="#">terms and conditions</a>.</p>
+<div id="submission" class="button"><button class="button" type="submit" onclick="shubh()">SUBMIT</button></div>
+
+    </center>
+
+    <script>
+
+
+
+function shubh(){
+
+    var myArray = [];
+    myArray.push("Thank you for registering with us! Please check your mail for login credentials.");
+    alert(myArray[0]);
+    window.open("C:/Users/Shubham/OneDrive/Desktop/Mytube/login_page.html","_top")
+
+}
+
+
+
+    </script>
+</body>
+</html>
